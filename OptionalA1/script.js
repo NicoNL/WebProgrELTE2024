@@ -59,18 +59,24 @@ let planets = [
 // 1. VISITED PLANETS
 let visitedPlanets = planets.filter(e => e.gate !== "Not visited yet");
 let planetsNames1 = visitedPlanets.map(e => e.name);
-
 document.getElementById("d1").innerHTML = "<strong>Visted Planets:</strong> " + planetsNames1.join(" ");
+console.log("Visted Planets: " + planetsNames1.join(" "))
+
+
 
 // 2. NUMBER OF PLANETS TO VISIT
 let noVisitedPlanets = planets.filter(e => e.gate == "Not visited yet");
 document.getElementById("d2").innerHTML = "SG-1 needs to visit " + noVisitedPlanets.length + " planets";
+console.log("SG-1 needs to visit " + noVisitedPlanets.length + " planets")
+
+
 
 //3. NUMBER OF FRIENDLY PLANETS
 
 let friendlyPlanets = planets.filter(e => e.gate == "Reachable" && e.info == "Friendly");
 let planetsNames2 = friendlyPlanets.map(e => e.name);
 document.getElementById("d3").innerHTML = "<strong>Friendly Planets:</strong> " + planetsNames2.join(" ");
+console.log("Friendly Planets: " + planetsNames2.join(" "))
 
 
 
