@@ -43,14 +43,9 @@ button3.addEventListener('click',()=>{
 
 
 // Task 4
-const button4 = document.querySelector('#task4 button')
-const input4 = document.querySelector('#task4 input')
-const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
 
-button4.addEventListener('click',()=>{
-    circleResult.innerText = 'task4 a'
+// // const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
 
-})
 // Task 5
 
 // Task 6
