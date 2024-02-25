@@ -44,9 +44,34 @@ button3.addEventListener('click',()=>{
 
 // Task 4
 
-// // const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
+document.addEventListener("DOMContentLoaded", function()
+{
+    const task4 = document.querySelector('#task4')
+    const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
+    const links = task4.getElementsByTagName('a');
 
+    for(let i = 0; i < links.length; i++)
+    {
+       hyperlinksList.appendChild(links[i]);
+       const new2 = document.createElement('br');
+       hyperlinksList.appendChild(new2);
+    }
+});
+
+
+
+// })
 // Task 5
+
+const button5 = document.querySelector('#task5 button')
+const input5 = document.querySelector('#task5 input');
+const imageContainer = document.querySelector('#task5 #imageContainer')
+
+button5.addEventListener('click',()=>{
+    const img = new Image ();
+    img.src = input5.value;
+    imageContainer.appendChild(img)
+})
 
 // Task 6
 const children = [
