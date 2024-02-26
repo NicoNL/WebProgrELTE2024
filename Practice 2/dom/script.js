@@ -282,3 +282,24 @@ document.querySelectorAll("ul li a").forEach(function(link) {
         });
     });
 });
+const input10 = document.querySelector('#task10 #guess');
+const button10 = document.querySelector('#task10 button');
+const guessResult = document.querySelector('#task10 #guessResult');
+
+let x = Math.floor(Math.random() * (10 - 1)) + 1;
+
+button10.addEventListener("click",()=>{
+    let number = parseInt(input10.value);
+    if(number > x){
+        guessResult.innerHTML = "This number is higher than the expected"
+    }
+    else if(number < x){
+        guessResult.innerHTML = "This number is lower than the expected"
+    }
+    else{
+        guessResult.innerHTML = "<strong>Congratulations!, you guessed the number, press Guess to play again</strong>"
+        x = Math.floor(Math.random() * (10 - 1)) + 1;
+    }
+});
+
+
