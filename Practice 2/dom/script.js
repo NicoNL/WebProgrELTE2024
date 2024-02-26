@@ -222,6 +222,49 @@ button8.addEventListener('click',()=>{
 
 
 // Task 9
+const inc = document.querySelector('#task9 #inc')
+const dec = document.querySelector('#task9 #dec')
+const input9 = document.querySelector('#task9 #counterValue')
+let value = 0;
+let intervalId;
+
+inc.addEventListener('click',()=>{
+    if(value < 100)
+    {
+        value += 1;
+        input9.value = value;
+    }
+})
+inc.addEventListener('mousedown',()=>{
+    intervalId = setInterval(() => {
+        if (value < 100) {
+            value += 1;
+            input9.value = value;
+        }
+    }, 100);
+})
+inc.addEventListener('mouseup', () => {
+    clearInterval(intervalId);
+});
+dec.addEventListener('click',()=>{
+    if(value > 0)
+    {
+        value -= 1;
+        input9.value = value;
+    }
+})
+dec.addEventListener('mousedown',()=>{
+    intervalId = setInterval(() => {
+        if (value > 0) {
+            value -= 1;
+            input9.value = value;
+        }
+    }, 100);
+})
+dec.addEventListener('mouseup', () => {
+    clearInterval(intervalId);
+});
+
 
 // Task 10
 
