@@ -157,7 +157,6 @@ const booksByYear = document.querySelector('#task7 #booksByYear');
 
 
 button7.addEventListener('click',()=>{
-    booksByYear.innerHTML = '';
     let inputYear = parseInt(input7.value);
     const filteredBooks = booksList.filter(b => b.publicationYear == inputYear);
     if(filteredBooks.length < 1){
@@ -175,6 +174,52 @@ button7.addEventListener('click',()=>{
 })
 
 // Task 8
+const button8 = document.querySelector('#task8 button');
+const input8 = document.querySelector('#task8 #publisher')
+const booksByPublisher = document.querySelector('#task8 #booksByPublisher')
+
+button8.addEventListener('click',()=>{
+    while (booksByPublisher.rows.length > 1) {
+        booksByPublisher.deleteRow(1);
+    }
+    if(input8.value == "publisher1"){
+        let newRow = booksByPublisher.insertRow();
+        let c1 = newRow.insertCell(0);
+        let c2 = newRow.insertCell(1);
+        let c3 = newRow.insertCell(2);
+        let c4 = newRow.insertCell(3);
+
+        c1.innerText = booksList[0].author
+        c2.innerText = booksList[0].title
+        c3.innerText = booksList[0].publicationYear
+        c4.innerText = booksList[0].publisher
+    }
+    else if(input8.value == "publisher2"){
+        let newRow = booksByPublisher.insertRow();
+        let c1 = newRow.insertCell(0);
+        let c2 = newRow.insertCell(1);
+        let c3 = newRow.insertCell(2);
+        let c4 = newRow.insertCell(3);
+
+        c1.innerText = booksList[1].author
+        c2.innerText = booksList[1].title
+        c3.innerText = booksList[1].publicationYear
+        c4.innerText = booksList[1].publisher
+    }
+    else if(input8.value == "publisher3"){
+        let newRow = booksByPublisher.insertRow();
+        let c1 = newRow.insertCell(0);
+        let c2 = newRow.insertCell(1);
+        let c3 = newRow.insertCell(2);
+        let c4 = newRow.insertCell(3);
+
+        c1.innerText = booksList[2].author
+        c2.innerText = booksList[2].title
+        c3.innerText = booksList[2].publicationYear
+        c4.innerText = booksList[2].publisher
+    }
+})
+
 
 // Task 9
 
