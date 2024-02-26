@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", function()
 // })
 // Task 5
 
-const button5 = document.querySelector('#task5 button')
+const button5 = document.querySelector('#task5 button');
 const input5 = document.querySelector('#task5 input');
-const imageContainer = document.querySelector('#task5 #imageContainer')
+const imageContainer = document.querySelector('#task5 #imageContainer');
 
 button5.addEventListener('click',()=>{
     const img = new Image ();
@@ -81,6 +81,25 @@ const children = [
     { name: "David", class: "5/D", age: 10 },
     { name: "Emma", class: "1/E", age: 6 }
 ];
+
+
+const button6 = document.querySelector('#task6 button')
+const in1 = document.querySelector('#task6 #input1');
+const in2 = document.querySelector('#task6 #input2');
+const in3 = document.querySelector('#task6 #input3');
+const dataTable = document.querySelector('#task6 #dataTable');
+
+button6.addEventListener('click',()=>{
+    let newRow = dataTable.insertRow();
+    let c1 = newRow.insertCell(0);
+    let c2 = newRow.insertCell(1);
+    let c3 = newRow.insertCell(2);
+
+    c1.innerHTML = in1.value;
+    c2.innerHTML = in2.value;
+    c3.innerHTML = in3.value;
+})
+
 
 // Task 7
 const booksList = [
