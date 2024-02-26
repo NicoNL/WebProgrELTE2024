@@ -82,12 +82,22 @@ const children = [
     { name: "Emma", class: "1/E", age: 6 }
 ];
 
-
 const button6 = document.querySelector('#task6 button')
 const in1 = document.querySelector('#task6 #input1');
 const in2 = document.querySelector('#task6 #input2');
 const in3 = document.querySelector('#task6 #input3');
 const dataTable = document.querySelector('#task6 #dataTable');
+
+for(let i = 0; i < children.length; i++){
+    let newRow = dataTable.insertRow();
+    let c1 = newRow.insertCell(0);
+    let c2 = newRow.insertCell(1);
+    let c3 = newRow.insertCell(2);
+
+    c1.innerHTML = children[i].name;
+    c2.innerHTML = children[i].class;
+    c3.innerHTML = children[i].age;
+}
 
 button6.addEventListener('click',()=>{
     let newRow = dataTable.insertRow();
