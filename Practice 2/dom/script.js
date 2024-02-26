@@ -76,7 +76,7 @@ button5.addEventListener('click',()=>{
 // Task 6
 const children = [
     { name: "Anna", class: "3/A", age: 8 },
-    { name: "Bence", class: "4/B", age: 9 },
+    { name: "Becnce", class: "4/B", age: 9 },
     { name: "Cecilia", class: "2/C", age: 7 },
     { name: "David", class: "5/D", age: 10 },
     { name: "Emma", class: "1/E", age: 6 }
@@ -149,6 +149,30 @@ const booksList = [
         isbn: "No ISBN"
     }
 ];
+
+
+const button7 = document.querySelector('#task7 button');
+const input7 = document.querySelector('#task7 #year');
+const booksByYear = document.querySelector('#task7 #booksByYear');
+
+
+button7.addEventListener('click',()=>{
+    booksByYear.innerHTML = '';
+    let inputYear = parseInt(input7.value);
+    const filteredBooks = booksList.filter(b => b.publicationYear == inputYear);
+    if(filteredBooks.length < 1){
+        const li = document.createElement('li');
+        li.textContent = "No books found in this year";
+        booksByYear.appendChild(li);
+    }
+    else{
+        filteredBooks.forEach(book =>{
+            const li = document.createElement('li');
+            li.textContent = book.title;
+            booksByYear.appendChild(li);
+        });
+    }
+})
 
 // Task 8
 
