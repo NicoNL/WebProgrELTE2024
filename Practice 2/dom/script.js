@@ -44,19 +44,17 @@ button3.addEventListener('click',()=>{
 
 // Task 4
 
-document.addEventListener("DOMContentLoaded", function()
-{
-    const task4 = document.querySelector('#task4')
-    const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
-    const links = task4.getElementsByTagName('a');
 
-    for(let i = 0; i < links.length; i++)
-    {
-       hyperlinksList.appendChild(links[i]);
-       const new2 = document.createElement('br');
-       hyperlinksList.appendChild(new2);
-    }
-});
+const hyperlinksList = document.querySelector('#task4 #hyperlinksList')
+const links = document.querySelectorAll('a');
+
+for(let i = 0; i < links.length; i++)
+{
+    const new2 = document.createElement('li');
+    new2.innerText = links[i].href;
+    hyperlinksList.appendChild(new2);
+}
+
 
 
 
@@ -157,6 +155,7 @@ const booksByYear = document.querySelector('#task7 #booksByYear');
 
 
 button7.addEventListener('click',()=>{
+    booksByYear.innerHTML = "";
     let inputYear = parseInt(input7.value);
     const filteredBooks = booksList.filter(b => b.publicationYear == inputYear);
     if(filteredBooks.length < 1){
@@ -226,20 +225,25 @@ const inc = document.querySelector('#task9 #inc')
 const dec = document.querySelector('#task9 #dec')
 const input9 = document.querySelector('#task9 #counterValue')
 let value = 0;
+let min = -10;
+let max = 10;
 let intervalId;
 
 inc.addEventListener('click',()=>{
-    if(value < 100)
+    if(value < max)
     {
         value += 1;
         input9.value = value;
+        inRange(value);
+
     }
 })
 inc.addEventListener('mousedown',()=>{
     intervalId = setInterval(() => {
-        if (value < 100) {
+        if (value+1 < max) {
             value += 1;
             input9.value = value;
+            inRange(value);
         }
     }, 100);
 })
@@ -247,23 +251,41 @@ inc.addEventListener('mouseup', () => {
     clearInterval(intervalId);
 });
 dec.addEventListener('click',()=>{
-    if(value > 0)
+    if(value > min)
     {
         value -= 1;
-        input9.value = value;
+        input9.value = value;    
+        inRange(value);
     }
 })
 dec.addEventListener('mousedown',()=>{
     intervalId = setInterval(() => {
-        if (value > 0) {
+        if (value-1 > min) {
             value -= 1;
             input9.value = value;
+            inRange(value);
         }
     }, 100);
 })
 dec.addEventListener('mouseup', () => {
     clearInterval(intervalId);
 });
+
+
+function inRange(x){
+    if(x >= max){
+        inc.disabled = true;
+    }
+    else{
+        inc.disabled = false;
+    }
+    if(x == min){
+        dec.disabled = true;
+    }
+    else{
+        dec.disabled = false;
+    }
+}
 
 
 // Task 10
