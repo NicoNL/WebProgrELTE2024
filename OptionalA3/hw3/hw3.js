@@ -40,5 +40,6 @@ cells.forEach(function(cell){
         image.style.filter = "grayscale(100%)";
         let paragraph = cell.querySelector("p");
         paragraph.style.backgroundColor = "rgb(143, 188, 143)";
+        paragraph.style.color = "white"
     })
 })
