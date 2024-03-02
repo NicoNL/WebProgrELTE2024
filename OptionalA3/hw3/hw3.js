@@ -29,9 +29,8 @@ let cells = document.querySelectorAll("td")
 cells.forEach(function(cell){
     cell.addEventListener("click", function(){
         let image = cell.querySelector("img");
-        image.style.filter = "grayscale(100%)";
-        let paragraph = cell.querySelector("figcaption");
-        paragraph.style.backgroundColor = "rgb(143, 188, 143)";
-        paragraph.style.color = "white"
+        image.className = "viewed"
+        let imgCaption = cell.querySelector("figcaption");
+        imgCaption.className = "viewedCaption"
     })
 })

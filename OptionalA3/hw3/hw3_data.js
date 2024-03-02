@@ -13,7 +13,7 @@ let episodes = [
         "rating": {
             "average": 8
         },
-        "image": {
+        "image": {  
             "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/69/172562.jpg",
             "original": "https://static.tvmaze.com/uploads/images/original_untouched/69/172562.jpg"
         },
