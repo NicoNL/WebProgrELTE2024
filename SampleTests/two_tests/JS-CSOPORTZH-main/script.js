@@ -49,7 +49,40 @@ generateButton.addEventListener("click",() =>{
         }
         table.appendChild(newRow);
     }
+    // Second Point
+    let cntColor =0;
+    let x = 0;
+    let y = 0;  
+    cells = document.querySelectorAll("td")
+    cells.forEach(cell =>{
+        cell.addEventListener("click",() => {
+            if(cntColor < 2){
+                cell.style.backgroundColor = "red";
+                cntColor++;
+                if(x == 0){
+                    x = cell.textContent;
+                    console.log(x)
+                }else{
+                    y = cell.textContent;
+                    console.log(y)
+                }
+            }
+            if(cntColor == 2){
+                let result = parseInt(x) * parseInt(y);
+                console.log(result);  
+                let output = document.querySelector("#output");
+                cells = document.querySelectorAll("td")
+                cells.forEach(cell => {
+                    cell.style.backgroundColor = "unset";
+                })
+                cntColor = 0;
+                x= 0;
+                output.innerText = result;
+            }
+        })
+    });
 })
+
 
 
 
