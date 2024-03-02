@@ -94,6 +94,36 @@
             prerequisites: []
         }
     ];
+    
+    const answers = document.getElementsByClassName("answer")
+
+    //Answer1
+    let noPreSubjetcts =  subjects.filter(subject => subject.prerequisites.length == 0);
+    let Answer1 = answers[0];
+    console.log(noPreSubjetcts[0].name);
+    Answer1.innerHTML += noPreSubjetcts[0].name;
+
+    //Answer2
+    let noPreSub5 =  subjects.filter(subject => subject.prerequisites.length == 0 && subject.creditValue == 5);
+    let Answer2 = answers[1];
+    if(noPreSub5.length <= 1){
+        Answer2.innerHTML += "Yes, there is."
+    }else{
+        Answer2 += "No,there is not."
+    }
+
+    //Answer3
+    let Answer3 = answers[2];
+    let creditSum = 0;
+    subjects.forEach(subject =>{
+        creditSum += parseInt(subject.creditValue)
+    });
+    Answer3.innerHTML += creditSum;
+
+    //Answer4
+    let Answer4 = answers[3];
+    let inforSubjects = subjects.filter(subject => subject.field == "informatics").map(subject => subject = subject.name);
+    Answer4.innerHTML += inforSubjects;
 
     // TASK 2
 
