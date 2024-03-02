@@ -64,7 +64,7 @@ inc.addEventListener('mousedown',() => {
         }else{
             clearInterval(intervalId)
         }
-    },200)
+    },300)
 })
 inc.addEventListener('mouseup',() => {
     clearInterval(intervalId)
