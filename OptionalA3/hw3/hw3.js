@@ -9,24 +9,16 @@ episodes.forEach(episode => {
     }
 
     const td = document.createElement("td");
-    const newDiv = document.createElement("div");
-    newDiv.style.display = "flex";
-    newDiv.style.flexDirection = "column";
-    newDiv.style.alignItems = "center";
 
     const img = document.createElement("img");
     img.src = episode.image.medium;
     img.alt = episode.name;
-    img.style.width = "100%";
-    img.style.height = "auto";
 
-    const name = document.createElement("p");
-    name.textContent = (episodeCount+1) + " - " + episode.name;
+    let imgCaption = document.createElement('figcaption');
+    imgCaption.innerHTML = (episodeCount+1) + " - " + episode.name;
 
-    newDiv.appendChild(img);
-    newDiv.appendChild(name);
-
-    td.appendChild(newDiv);
+    td.appendChild(img);
+    td.appendChild(u=imgCaption);
     currentTr.appendChild(td);
 
     episodeCount++;
@@ -38,7 +30,7 @@ cells.forEach(function(cell){
     cell.addEventListener("click", function(){
         let image = cell.querySelector("img");
         image.style.filter = "grayscale(100%)";
-        let paragraph = cell.querySelector("p");
+        let paragraph = cell.querySelector("figcaption");
         paragraph.style.backgroundColor = "rgb(143, 188, 143)";
         paragraph.style.color = "white"
     })
