@@ -52,36 +52,41 @@ generateButton.addEventListener("click",() =>{
     // Second Point
     let cntColor =0;
     let x = 0;
-    let y = 0;  
+    let y = 0;
+    let cellx;
+    let celly;
     let result = 0;
     cells = document.querySelectorAll("td")
     cells.forEach(cell =>{
         cell.addEventListener("click",() => {
-            if(cntColor < 2){
+            if(cntColor == 0){
+                cells = document.querySelectorAll("td");
+                cells.forEach(cell => {
+                    cell.style.backgroundColor = "unset";
+                })
+            }
+            cntColor++;
+            if(cntColor < 3){
                 cell.style.backgroundColor = "red";
-                cntColor++;
                 if(x == 0){
                     x = cell.textContent;
-                    console.log(x)
+                    cellx = cell;
+
                 }else{
                     y = cell.textContent;
-                    console.log(y)
+                    celly = cell;
                 }
             }
             if(cntColor == 2){
                 let result = parseInt(x) * parseInt(y);
-                console.log(result);  
                 let output = document.querySelector("#output");
-                cells = document.querySelectorAll("td")
-
-
-                cntColor = 0;
                 x= 0;
                 output.innerText = result;
-                setTimeout(() => {
-                    cells.forEach(cell => {
-                    cell.style.backgroundColor = "unset";
-                })}, 200); 
+                cntColor = 0;
+                // setTimeout(() => {
+                //     cells.forEach(cell => {
+                //     cell.style.backgroundColor = "unset";
+                // })}, 200); 
             }
         })
     });
