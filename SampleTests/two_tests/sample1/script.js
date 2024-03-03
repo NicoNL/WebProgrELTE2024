@@ -53,6 +53,7 @@ generateButton.addEventListener("click",() =>{
     let cntColor =0;
     let x = 0;
     let y = 0;  
+    let result = 0;
     cells = document.querySelectorAll("td")
     cells.forEach(cell =>{
         cell.addEventListener("click",() => {
@@ -72,12 +73,15 @@ generateButton.addEventListener("click",() =>{
                 console.log(result);  
                 let output = document.querySelector("#output");
                 cells = document.querySelectorAll("td")
-                cells.forEach(cell => {
-                    cell.style.backgroundColor = "unset";
-                })
+
+
                 cntColor = 0;
                 x= 0;
                 output.innerText = result;
+                setTimeout(() => {
+                    cells.forEach(cell => {
+                    cell.style.backgroundColor = "unset";
+                })}, 200); 
             }
         })
     });
