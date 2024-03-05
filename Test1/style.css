@@ -1,0 +1,57 @@
+button {
+    margin: 0 auto;
+}
+
+/* CSS styling for results cards */
+#answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#answers ul {
+    list-style-type: none;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 10px); /* Three columns with gap of 20px */
+    box-sizing: border-box;
+}
+
+#answers li {
+    margin-bottom: 5px;
+}
+
+#answers p.good {
+    color: green;
+    margin-top: 10px;
+}
+
+#answers p.bad {
+    color: red;
+    margin-top: 10px;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    all: unset;
+    padding: 5px;
+    width: 10%;
+    height: 2em;
+    font-size: 1.1em;
+    background-color: #517D81;
+    color: white;
+    border-radius: 0.8em;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #7A8174;
+    transition: all 0.2s;
+}
