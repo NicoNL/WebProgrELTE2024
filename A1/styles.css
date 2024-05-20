@@ -1,0 +1,28 @@
+body{
+    background-color: #dfbd36;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+#MainTitle{
+    text-align: center;
+
+}
+#MainTitle h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 60px;
+}
+
+footer{
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
