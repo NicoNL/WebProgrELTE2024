@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartGate</title>
+    <link rel="icon" href="Assets/icon.ico">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="MainTitle">
-        <h1 >STARTGATE</h1>
+      <h1>STARTGATE</h1>
+      <div class="InfoButton">
+        <h5 class ="infoText">ⓘInstructions</h5>
+        <div class="Instructions">
+          <span class="closeButton">×</span>
+          <h4>Players and Time</h4>
+          <p>Select 1-4 player and a maximum of 15 minutes to play, if you want no time limit choose 0</p>
+          <h4>Game</h4>
+          <p>Find the 3 lost elements, you can refill your bottles in an oasis, make sure not run out of water!</p>
+          <h4>Move and Dig</h4>
+          <p>In order to move click on the square adjacent to the current player and to dig click on the actions icon</p>
+          <img src="Assets/gif.gif" alt="">
+        </div>
+      </div>
     </div>
     <main>
-        <section id="PlayGround">
-
-        </section>
+      <section id="Menu">
+        <p>Select number of players:</p>
+        <input type="number" id="numPlayers" value="1" min="1" max="4" />
+        <p>Select time in minutes:</p>
+        <p class="noTime" style="color: red; font-size: 12px; display: none">
+          No time Limit
+        </p>
+        <input
+          type="number"
+          id="minutes"
+          value="5"
+          min="0"
+          max="15"
+          oninput="inputIsZero(this)"
+        />
+        <button id="nextButton">Next</button>
+      </section>
+      <section id="Panel">
+        <div id="Players12"></div>
+        <div id="Information">
+          <button id="backButton">Back</button>
+          <button id="startButton" disabled>Start</button>
+        </div>
+        <div id="Players34"></div>
+      </section>
+      <section id="PlayGround"></section>
     </main>
     <footer>
-        <p>&copy; NICOLAS NINO LOZANO - 2024 ELTE</p>
+      <p>&copy; NICOLAS NINO LOZANO - 2024 ELTE</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,28 +1,381 @@
-body{
-    background-color: #dfbd36;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #000000;
+  background-image: url('Assets/brown.jpg');
+
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  position: relative;
 }
-#MainTitle{
-    text-align: center;
+#MainTitle {
+  text-align: center  ;
+  text-align: center;
+  width: auto;
+}
+#MainTitle h1 {
+  color: #4e3605;
+  display: inline-block;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.InfoButton {
+  margin-top: 0px;
+  color: #000000;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.InfoButton h5 {
+  margin: 0px;
+}
+.InfoButton .infoText{
+  cursor: pointer;
+}
+.Instructions {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  margin: 0px;
+  left: 20%;
+  top: 40px;
+  width: 200px;
+  background-color: #ffeccb;
+  border: 3px solid #9b8441;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  text-align: center;
+  font-size: 10px;
+}
+.Instructions p{
+  color: #000000;
+  margin: 0px;
+  background-color: transparent;
+  border: 0px;
+}
+.Instructions h4{
+  margin: 0px;
+}
+.Instructions img{
+  width: 200px;
+  height: 100px;
+}
+.InfoButton .closeButton {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  width: 14px;
+  
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 100%;
+  font-weight: bold;
+  color: rgb(39, 39, 39);
+  background-color: red;
+}
+
+
+main {
+  display: grid;
+  justify-content: center;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/* MENU RELATED */
+#Menu {
+  border: 2px solid #9b8441;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  width: 306px;
+  height: 150px;
+  background-color: #ffeccb;
+  display: block;
+  text-align: center;
+}
+#Menu p {
+  margin: 0px;
+  font-size: 15px;
+}
+#Menu input {
+  width: 180px;
+  font-size: 15px;
+  margin: 0px;
+}
+
+#numPlayers {
+  background-color: #e3ceab;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+#minutes {
+  background-color: #e3ceab;
+  text-align: center;
+  font-weight: bold;
+}
+#nextButton {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: 3px solid #9b8441;
+  width: 40%;
+  height: 20%;
+  background-color: #ad903a;
+  font-size: 15px;
+  font-weight: bold;
+}
+#backButton {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 3px solid #9b8441;
+  width: 60%;
+  height: 20%;
+  background-color: #ad903a;
+  font-size: 15px;
+  font-weight: bold;
+}
+#startButton {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 3px solid #9b8441;
+  width: 60%;
+  height: 20%;
+  background-color: #ad903a;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mainMenu {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 3px solid #9b8441;
+  width: 60%;
+  height: 20%;
+  background-color: #ad903a;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#Panel {
+  border-radius: 10px;
+  margin-bottom: 6px;
+  width: 310px;
+  height: 150px;
+  display: none;
+}
+
+#Players12 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  row-gap: 5px;
+  margin-right: 6px;
+}
+#Players34 {
+  height: 100%;
+  width: 95%;
+  margin-left: 2px;
+  background-color: #ffeccb;
+  border: 2px solid #9b8441;
+  border-radius: 10px;
+  row-gap: 5px;
+  display: grid;
+}
+.moreThanTwoPLayers {
+  background-color: transparent;
+  border: 0px;
+}
+.player {
+  height: 100%;
+  width: 100%;
+  background-color: #ffeccb;
+  border: 2px solid #9b8441;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
 
 }
-#MainTitle h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 60px;
+.player h5{
+  font-size: 12px;
+  margin: 3px 0px 3px 0px;
+}
+.player button {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #9b8441;
+  background-color: #ad903a;
+  font-size: 12px;
+  font-weight: bold;
+}
+.player p {
+  color: black;
+}
+#Information {
+  height: 100%;
+  width: 100%;
+  background-color: #ffeccb;
+  border: 2px solid #9b8441;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+#Information p{
+ margin: 5px 0px 5px 0px;
+}
+#Information img{
+  width : 35px;
+  height : 35px;
+  margin: 0px 10px 0px 7px;
+  opacity: 50%;
+}
+#hiddenMenu {
+  border: 0px;
+  margin-bottom: 8px;
+  width: 309px;
+  height: 200px;
+  display: flex;
 }
 
-footer{
-    color: #ffffff;
-    background-color: black;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.actions{
+  display : inline-flex;
+  margin-right : 40%;
+  cursor: default;
 
+}
+.actions img{
+  width : 20px;
+  height : 20px;
+  margin : 0px;
+}
+.actions p{
+  margin : 0px;
+}
+/* END MENU RELATED */
+
+/* TABLE RELATED */
+
+#PlayGround {
+  width: 300px;
+  height: auto;
+  padding: 2px;
+  padding-right: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #ffeccb;
+  border-collapse: collapse;
+  margin-bottom: 65%;
+}
+.cell {
+  border: 1px solid #b7a991;
+  border-radius: 8px;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  font-size: 0px;
+  background-color: #a1820e;
+}
+#center{
+  background-image: url('Assets/Stargate.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 0px solid #ffeccb;
+}
+#hole{
+  background-image: url('Assets/Hole.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 0px solid #ffeccb;
+}
+#OasisMarker{
+  background-image: url('Assets/Oasis marker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+#Oasis{
+  background-image: url('Assets/Oasis.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+#Drought{
+  background-image: url('Assets/Drought.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+#Item1{
+  background-image: url('Assets/Item 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+#Item2{
+  background-image: url('Assets/Item 2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+#Item3{
+  background-image: url('Assets/Item 3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffeccb;
+  border: 1px solid #b7a991;
+}
+
+.goddCell{
+  background-color: #cfb864;
+  cursor: pointer;
+
+}
+.cell img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+.cell p {
+  display: none;
+}
+
+/* END TABLE RELATED */
+
+footer {
+  color: #514b32;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0;
+  bottom: 0;
+  font-size: 10px;
+  width: 100%;
+  position: absolute;
 }
