@@ -1,0 +1,237 @@
+section {
+  margin-left: 2%;
+}
+figure {
+  margin: 0px;
+}
+.Title {
+  font-size: 30px;
+  color: #14264d;
+  margin-bottom: 0px;
+}
+.Author {
+  margin-top: 0px;
+}
+.Content {
+  display: flex;
+  font-size: 28px;
+}
+.book-cover-pic {
+  height: 300px;
+  width: auto;
+}
+.title-div{
+  display: flex;
+  align-items: center;
+}
+.Information {
+  display: block;
+  text-align: justify;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.About {
+  font-size: 20px;
+  border: 2px solid #cacfd1;
+}
+.Information {
+  width: 100%;
+}
+.Information * {
+  margin: 2px;
+}
+#mark-button{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 45px;
+}
+.BookForm {
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+#bookButton {
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+.image-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+.img-radio {
+  display: none;
+}
+.image-select option {
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  margin: 5px;
+}
+.star-rating input[type="radio"] {
+  display: none;
+}
+.img-option {
+  margin-top: 5px;
+  height: 100px;
+  width: auto;
+}
+.img-option:hover {
+  padding-bottom: 10px;
+  transition: 0.2s;
+}
+.img-radio:checked + .img-option {
+  transition: 0.5s;
+  filter: brightness(150%);
+  filter: hue-rotate(100deg);
+}
+.radio-option {
+  display: grid;
+}
+.errors {
+  margin-top: 15px;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+.success {
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+.star-rating input[type="radio"] {
+  display: none;
+}
+.star-rating label {
+  font-size: 40px;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s;
+}
+.review-box {
+  margin-left: -2px;
+  text-align: left;
+  width: 100%;
+}
+.star-rating {
+  direction: rtl;
+  font-size: 0;
+}
+.star-rating input[type="radio"]:checked ~ label {
+  color: #bbb;
+}
+
+.star-rating input[type="radio"]:checked + label,
+.star-rating input[type="radio"]:checked + label ~ label {
+  color: #00f2f2;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #00c2f2;
+}
+
+.star-rating input[type="radio"]:checked:hover + label,
+.star-rating input[type="radio"]:checked:hover + label ~ label,
+.star-rating input[type="radio"]:checked:hover ~ input ~ label {
+  color: #00f2f2;
+}
+.review-box {
+  height: auto;
+  width: 50%;
+}
+.comment-box {
+  height: 100px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.user-pic {
+  height: 40px;
+  margin-right: 5px;
+  width: auto;
+}
+.comment-info {
+  align-self: center;
+  display: flex;
+  font-size: 25px;
+}
+.comment hr {
+  color: #dadada;
+  border: 1px solid;
+}
+.color-star {
+  color: #00f2f2;
+  font-size: 30px;
+}
+.no-star {
+  color: #bbb;
+  font-size: 30px;
+}
+.comment-desc {
+  font-size: 22px;
+}
+.Rating {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: -30px;
+}
+.c-rating {
+  margin: 0px;
+  color: #00f2f2;
+  font-size: 20px;
+}
+.n-rating {
+  margin: 0px;
+  color: #bbb;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .Section {
+    text-align: center;
+  }
+  .About {
+    font-size: 20px;
+    border: 2px solid #cacfd1;
+    width: 92%;
+  }
+  .Basics {
+    text-align: center;
+  }
+  .Content {
+    display: block;
+  }
+  .Content figure {
+    margin-left: 25%;
+    margin-right: 30%;
+  }
+  .Information {
+    text-align: center;
+    font-size: 20px;
+  }
+  .review-box {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .comment-box {
+    height: 100px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #mark-button{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}

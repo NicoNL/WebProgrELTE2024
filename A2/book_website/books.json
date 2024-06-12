@@ -1,0 +1,119 @@
+[
+    {
+        "title": "Sacrifice Moon",
+        "author": "Julie Fortune",
+        "description": "Just four days after Major Kawalsky's death, Colonel Jack O'Neill leads the newly commissioned SG-1 on their first mission through the Stargate.",
+        "year": 2004,
+        "image": "book_cover_1.png",
+        "planet": "P3X-797",
+        "reviews": [
+            {
+                "username": "Huiper",
+                "rating": 5,
+                "comment": "I just loved it"
+            },
+            {
+                "username": "Guts",
+                "rating": 3,
+                "comment": "The ending was quite disappointing."
+            },
+            {
+                "username": "Nicolas",
+                "rating": 4,
+                "comment": "Best book so far but the last chapter is not what was expected"
+            }
+        ]
+    },
+    {
+        "title": "City of the Gods",
+        "author": "Sonny Whitelaw",
+        "description": "Notes about Argos, the planet originally under the control of the Goa'uld Pelops. A definitive Greek ancestry decorates the structures, as well as the clothing of the Argosians, the planets occupants who prefered to call themselves the Chosen. For some time Pelops operated on the planet, experimenting on the human population, much like Nirrti has done, attempting to expand their lifespan.",
+        "year": 2005,
+        "image": "book_cover_2.png",
+        "planet": "P3X-8596",
+        "reviews": [
+            {
+                "username": "Guts",
+                "rating": 5,
+                "comment": "My favorite book from Whitelaw!!"
+            }
+        ]
+    },
+    {
+        "title": "Barque of Heaven",
+        "author": "Suzanne Wood",
+        "description": "The Stargate SG-1 team find themselves transported to a world where they must solve a series of riddles and avoid deadly traps in order to travel home. Pursued by Goa'uld and Jaffa, it is a race against death to the finish line.",
+        "year": 2008,
+        "image": "book_cover_3.png",
+        "planet": "P3X-1496",
+        "reviews": []
+    },
+    {
+        "title": "Valhalla",
+        "author": "Tim Waggoner",
+        "description": "Upon the legendary fields of Valhalla, the spirits of Viking warriors do eternal battle in service to their god, Odin. By night they feast and toast the fallen, but at dawn the dead are restored to fight until the end of times.",
+        "year": 2009,
+        "image": "book_cover_4.png",
+        "planet": "P3X-5463",
+        "reviews": [
+            {
+                "username": "Guts",
+                "rating": 1,
+                "comment": ""
+            }
+        ]
+    },
+    {
+        "title": "Heart's Desire",
+        "author": "Amy Griswold",
+        "description": "Colonel Jack O'Neill wants a relaxing mission for SG-1 as they recover from Sha're\u2019s death at the hands of Teal'c and the horrors of Sokar's prison world of Ne'tu. The trade negotiations on Saday look like just the ticket \u2014 until the pirates show up.",
+        "year": 2012,
+        "image": "book_cover_4.png",
+        "planet": "P3X-9013",
+        "reviews": [
+            {
+                "username": "Guts",
+                "rating": 4,
+                "comment": "My children loved this book!"
+            }
+        ]
+    },
+    {
+        "title": "Female of the Species",
+        "author": "Geonn Cannon",
+        "description": "Here come the girls\u2026 Vala Mal Doran, SG-1\u2019s newest recruit, simply can\u2019t ignore the plea for help she receives from her old friend, Tanis Reynard.",
+        "year": 2018,
+        "image": "book_cover_6.png",
+        "planet": "P3X-437",
+        "reviews": []
+    },
+    {
+        "title": "Berserk",
+        "author": "Kentaro Miura",
+        "description": "Berserk is a dark fantasy manga series written and illustrated by Kentaro Miura. The series follows the story of Guts, a mercenary warrior drawn into the world of the God Hand, powerful beings who rule the supernatural realm. The story is set in the Kingdom of Midland, a fictional country inspired by medieval Europe",
+        "year": 1989,
+        "image": "book_cover_5.png",
+        "planet": "M4D-139",
+        "reviews": [
+            {
+                "username": "Guts",
+                "rating": 5,
+                "comment": "The best of the best"
+            },
+            {
+                "username": "Huiper",
+                "rating": 5,
+                "comment": "Best Manga Ever!"
+            }
+        ]
+    },
+    {
+        "title": "Sample New Book",
+        "author": "Sample Author",
+        "description": "Sample Description",
+        "year": 2024,
+        "image": "book_cover_1.png",
+        "planet": "Earth",
+        "reviews": []
+    }
+]

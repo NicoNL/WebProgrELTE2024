@@ -1,0 +1,46 @@
+.loginForm {
+  color: #3b3c44;
+  margin: 80px 35% 10px 35%;
+  text-align: center;
+}
+#password {
+  margin-bottom: 10px;
+}
+.RegisterInfo {
+  margin-top: 3% ;
+  text-align: center;
+  margin-bottom: 70%;
+}
+.RegisterInfo p{
+  margin-bottom: 7px;
+}
+#RegisterButton {
+  margin-top: 5%;
+
+}
+.errors{
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+.success{
+  font-size:  20px;
+  color: green;
+  font-weight: bold;
+}
+footer{
+  margin-top: 50%;
+}
+@media screen and (max-width: 600px) {
+  .loginForm {
+    color: #3b3c44;
+    margin: 150px 20% 50px 20%;
+  }
+  .RegisterInfo {
+    text-align: center;
+    margin-bottom: 80%;
+  }
+  #RegisterButton {
+    margin-bottom: 110%;
+  }
+}

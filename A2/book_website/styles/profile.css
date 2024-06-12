@@ -1,0 +1,41 @@
+.UserInfo{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    margin-bottom: 14%
+}
+.UserPic{
+    height: 400px;
+    width: auto
+}
+.UserData{
+    display: block;
+    text-align: left;
+}
+.Username{
+    font-size: 50px;
+    margin: 0px;
+    color: #14264d;
+}
+.review *{
+    margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .UserInfo{
+        text-align: center;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 2%;
+    }
+    .UserPic{
+        height: 240px;
+        width: auto
+    }
+    .UserData{
+        display: block;
+        text-align: center;
+    }
+}

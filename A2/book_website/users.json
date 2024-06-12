@@ -1,0 +1,103 @@
+[
+    {
+        "username": "Huiper",
+        "email": "huiper1704@hotmail.com",
+        "password": ".UDwu3u-k_,qW-5",
+        "admin": false,
+        "books": [
+            {
+                "title": "Sacrifice Moon",
+                "rating": 5,
+                "comment": "I just loved it"
+            },
+            {
+                "title": "Berserk",
+                "rating": 5,
+                "comment": "Best Manga Ever!"
+            }
+        ],
+        "read": [
+            {
+                "title": "City of the Gods",
+                "date": "12-06-24 15:36"
+            },
+            {
+                "title": "Sacrifice Moon",
+                "date": "12-06-24 15:40"
+            }
+        ]
+    },
+    {
+        "username": "admin",
+        "email": "admin@admin.com",
+        "password": "admin",
+        "admin": true,
+        "books": [],
+        "read": []
+    },
+    {
+        "username": "Nicolas",
+        "email": "nicolas@nic.com",
+        "password": "nico",
+        "admin": "false",
+        "books": [
+            {
+                "title": "Sacrifice Moon",
+                "rating": 4,
+                "comment": "The book  is great the last chapter was not the best"
+            }
+        ],
+        "read": []
+    },
+    {
+        "username": "Guts",
+        "email": "Guts@gmail.com",
+        "password": "guts",
+        "admin": "false",
+        "books": [
+            {
+                "title": "Heart's Desire",
+                "rating": 4,
+                "comment": "My children loved this book!"
+            },
+            {
+                "title": "Valhalla",
+                "rating": 1,
+                "comment": ""
+            },
+            {
+                "title": "Berserk",
+                "rating": 5,
+                "comment": "The best of the best"
+            },
+            {
+                "title": "City of the Gods",
+                "rating": 5,
+                "comment": "My favorite book from Whitelaw!!"
+            },
+            {
+                "title": "Sacrifice Moon",
+                "rating": 3,
+                "comment": "The ending was quite disappointing."
+            }
+        ],
+        "read": [
+            {
+                "title": "Sacrifice Moon",
+                "date": "12-06-24 16:07"
+            },
+            {
+                "title": "City of the Gods",
+                "date": "12-06-24 16:08"
+            },
+            {
+                "title": "Berserk",
+                "date": "12-06-24 16:09"
+            },
+            {
+                "title": "Heart's Desire",
+                "date": "12-06-24 16:10"
+            }
+        ]
+    }
+]
