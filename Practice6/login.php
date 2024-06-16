@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+<!-- c -->
     <body class="p-0">
         <div class="header w-full text-3xl bg-neutral p-5 font-bold text-neutral-content text-center "> Login/Registration <a class="btn btn-primary font-bold ml-10 mt-1" href="index.php">Back to main page</a> </div>
         <form action="login.php" method="post" class="p-5" novalidate>
